@@ -1,0 +1,103 @@
+#body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 1000vh;
+    background-color: #1e1e1e; /* Dark background color */
+    color: #fff;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ffffff; /* Dark background color */
+    color: #333; /* White text color */
+}
+
+header {
+    background-color: #ececec; /* Darker header background color */
+    color: rgb(255, 0, 0); /* Yellow header text color */
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: space-between; /* This will place h1 on the left and nav on the right */
+    align-items: center;
+}
+h1{
+    margin: 0; /* Remove default margin */
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+h1:hover{
+    color: #464646;
+}
+h1::selection{
+    color:rgb(255,0,0);
+}
+header *::selection{
+    color:rgb(255,0,0);
+}
+
+main {
+    flex: 1;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    width: calc(33.33% - 20px);
+ /* Adjust width and margin as needed */
+    height: 270px;;
+    background-color: #333;
+    margin: 0px;
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #ddd;
+    color: #333;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+footer p::selection{
+    color: rgb(255,0,0);
+}
+
+footer p {
+    margin: 0;
+}
+nav {
+    display: flex; /* Change to flex to create a horizontal layout */
+}
+
+nav a {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    margin: 0 20px;
+    transform: scale(1);
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    font-size: large;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav a:hover {
+    
+    color: red;
+}
+
+::-webkit-scrollbar-thumb
